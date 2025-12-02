@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Games Collection - Ultimate Gaming Experience</title>
+    <meta name="description"
+        content="Experience classic retro games with stunning modern graphics. Play Snake, Tic-Tac-Toe, and Snake & Ladder with beautiful animations and premium design.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <span class="title-retro">RETRO</span>
+                <span class="title-games">GAMES</span>
+            </h1>
+            <p class="subtitle">Classic Games, Modern Experience</p>
+            <p class="author">By RUTWIJ SUDKE</p>
+        </header>
+
+        <main class="game-grid">
+            <div class="game-card" data-game="snake">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20,50 Q30,20 50,30 T80,50 Q90,70 70,80 T40,70" stroke="currentColor"
+                                stroke-width="8" fill="none" stroke-linecap="round" />
+                            <circle cx="75" cy="45" r="3" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Snake</h2>
+                    <p class="card-description">Navigate the snake to eat food and grow longer. Classic arcade action!
+                    </p>
+                    <button class="play-btn" onclick="location.href='snake.html'">
+                        <span>PLAY NOW</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="tictactoe">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="33" y1="10" x2="33" y2="90" stroke="currentColor" stroke-width="4" />
+                            <line x1="67" y1="10" x2="67" y2="90" stroke="currentColor" stroke-width="4" />
+                            <line x1="10" y1="33" x2="90" y2="33" stroke="currentColor" stroke-width="4" />
+                            <line x1="10" y1="67" x2="90" y2="67" stroke="currentColor" stroke-width="4" />
+                            <circle cx="50" cy="50" r="12" stroke="currentColor" stroke-width="4" fill="none" />
+                            <line x1="13" y1="13" x2="27" y2="27" stroke="currentColor" stroke-width="4" />
+                            <line x1="27" y1="13" x2="13" y2="27" stroke="currentColor" stroke-width="4" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Tic-Tac-Toe</h2>
+                    <p class="card-description">Challenge a friend in this timeless strategy game. Get three in a row!
+                    </p>
+                    <button class="play-btn" onclick="location.href='tictactoe.html'">
+                        <span>PLAY NOW</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-card" data-game="snakeladder">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="10" y="10" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <rect x="40" y="10" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <rect x="70" y="10" width="20" height="20" fill="none" stroke="currentColor"
+                                stroke-width="2" />
+                            <line x1="25" y1="45" x2="25" y2="75" stroke="currentColor" stroke-width="3" />
+                            <line x1="35" y1="45" x2="35" y2="75" stroke="currentColor" stroke-width="3" />
+                            <line x1="25" y1="50" x2="35" y2="50" stroke="currentColor" stroke-width="2" />
+                            <line x1="25" y1="60" x2="35" y2="60" stroke="currentColor" stroke-width="2" />
+                            <line x1="25" y1="70" x2="35" y2="70" stroke="currentColor" stroke-width="2" />
+                            <path d="M65,75 Q70,65 75,75" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg>
+                    </div>
+                    <h2 class="card-title">Snake & Ladder</h2>
+                    <p class="card-description">Roll the dice and race to 100. Climb ladders, avoid snakes!</p>
+                    <button class="play-btn" onclick="location.href='snakeladder.html'">
+                        <span>PLAY NOW</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Built with ❤️ | All games run in your browser</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

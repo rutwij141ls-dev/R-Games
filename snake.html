@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game - Retro Games Collection</title>
+    <meta name="description"
+        content="Classic Snake game with modern graphics and smooth animations. Eat food, grow longer, and beat your high score!">
+    <link rel="stylesheet" href="snake.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="game-container">
+        <a href="index.html" class="back-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            Back to Menu
+        </a>
+
+        <header class="game-header">
+            <h1 class="game-title">SNAKE</h1>
+            <div class="score-board">
+                <div class="score-item">
+                    <span class="score-label">Score</span>
+                    <span class="score-value" id="score">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">High Score</span>
+                    <span class="score-value" id="highScore">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="game-overlay" id="gameOverlay">
+                <div class="overlay-content">
+                    <h2 class="overlay-title">Ready to Play?</h2>
+                    <p class="overlay-text">Use arrow keys to control the snake</p>
+                    <button class="start-btn" id="startBtn">START GAME</button>
+                </div>
+            </div>
+            <div class="game-overlay hidden" id="gameOverOverlay">
+                <div class="overlay-content">
+                    <h2 class="overlay-title game-over-title">Game Over!</h2>
+                    <p class="overlay-text">Your Score: <span id="finalScore">0</span></p>
+                    <button class="start-btn" id="restartBtn">PLAY AGAIN</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-hint">
+            <div class="hint-item">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 10 L20 30 M10 20 L20 10 L30 20" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <span>↑</span>
+            </div>
+            <div class="hint-item">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 10 L20 30 M10 20 L20 30 L30 20" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <span>↓</span>
+            </div>
+            <div class="hint-item">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M10 20 L30 20 M20 10 L10 20 L20 30" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <span>←</span>
+            </div>
+            <div class="hint-item">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M10 20 L30 20 M20 10 L30 20 L20 30" stroke="currentColor" stroke-width="2" fill="none" />
+                </svg>
+                <span>→</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="snake.js"></script>
+</body>
+
+</html>

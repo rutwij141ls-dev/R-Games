@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe - Retro Games Collection</title>
+    <meta name="description"
+        content="Classic Tic-Tac-Toe game with beautiful animations and modern design. Challenge a friend to a strategic battle!">
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="game-container">
+        <a href="index.html" class="back-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            Back to Menu
+        </a>
+
+        <header class="game-header">
+            <h1 class="game-title">TIC-TAC-TOE</h1>
+            <div class="status-bar">
+                <div class="player-indicator">
+                    <span class="current-player" id="currentPlayer">Player X</span>
+                    <div class="player-icon" id="playerIcon">
+                        <svg class="x-icon active" viewBox="0 0 100 100">
+                            <line x1="20" y1="20" x2="80" y2="80" stroke="currentColor" stroke-width="8"
+                                stroke-linecap="round" />
+                            <line x1="80" y1="20" x2="20" y2="80" stroke="currentColor" stroke-width="8"
+                                stroke-linecap="round" />
+                        </svg>
+                        <svg class="o-icon" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="30" stroke="currentColor" stroke-width="8" fill="none" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="game-board" id="board">
+            <div class="cell" data-cell data-index="0"></div>
+            <div class="cell" data-cell data-index="1"></div>
+            <div class="cell" data-cell data-index="2"></div>
+            <div class="cell" data-cell data-index="3"></div>
+            <div class="cell" data-cell data-index="4"></div>
+            <div class="cell" data-cell data-index="5"></div>
+            <div class="cell" data-cell data-index="6"></div>
+            <div class="cell" data-cell data-index="7"></div>
+            <div class="cell" data-cell data-index="8"></div>
+        </div>
+
+        <button class="reset-btn" id="resetBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M21 12a9 9 0 11-9-9c2.52 0 4.93 1 6.74 2.74L21 8M21 3v5h-5" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" />
+            </svg>
+            New Game
+        </button>
+    </div>
+
+    <div class="game-overlay hidden" id="winOverlay">
+        <div class="overlay-content">
+            <div class="win-animation">
+                <svg class="trophy-icon" viewBox="0 0 100 100">
+                    <path
+                        d="M25 20 L25 30 Q25 40 35 40 L35 70 L30 70 L30 80 L70 80 L70 70 L65 70 L65 40 Q75 40 75 30 L75 20"
+                        stroke="currentColor" stroke-width="4" fill="none" />
+                    <circle cx="50" cy="15" r="8" fill="currentColor" />
+                </svg>
+            </div>
+            <h2 class="win-title" id="winText">Player X Wins!</h2>
+            <p class="win-subtitle">Congratulations!</p>
+            <button class="play-again-btn" id="playAgainBtn">
+                <span>PLAY AGAIN</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="tictactoe.js"></script>
+</body>
+
+</html>
